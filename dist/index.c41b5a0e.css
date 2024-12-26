@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap";
 *, :before, :after, ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -63,7 +64,6 @@
 
 html, :host {
   -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
   tab-size: 4;
   font-feature-settings: normal;
   font-variation-settings: normal;
@@ -168,7 +168,11 @@ progress {
   vertical-align: baseline;
 }
 
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-outer-spin-button {
   height: auto;
 }
 

@@ -164,10 +164,10 @@ window.addEventListener('parcelhmraccept', ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"f11b6b8f6a1f6f0b":"786KC","f490fb404efab291":"1dldy"}],"8ntPa":[function(require,module,exports,__globalThis) {
+},{"f11b6b8f6a1f6f0b":"786KC","f490fb404efab291":"1dldy"}],"4cJp5":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = null;
+var HMR_PORT = 1235;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
@@ -1897,11 +1897,11 @@ var SoundManager = /** @class */ function() {
     SoundManager.prototype.loadSoundEffects = function() {
         var _this = this;
         try {
-            this.scene.load.audio('spin-sound', '/sounds/spin.mp3');
-            this.scene.load.audio('win-sound', '/sounds/win.mp3');
-            this.scene.load.audio('big-win-sound', '/sounds/big-win.mp3');
-            this.scene.load.audio('lose-sound', '/sounds/lose.mp3');
-            this.scene.load.audio('background-music', '/sounds/background-music.mp3');
+            this.scene.load.audio('spin-sound', './sounds/spin.mp3');
+            this.scene.load.audio('win-sound', './sounds/win.mp3');
+            this.scene.load.audio('big-win-sound', './sounds/big-win.mp3');
+            this.scene.load.audio('lose-sound', './sounds/lose.mp3');
+            this.scene.load.audio('background-music', './sounds/background-music.mp3');
             this.scene.load.once('complete', function() {
                 console.log('SoundManager: Sound effects loaded successfully');
                 _this.initializeSounds();
@@ -4273,7 +4273,7 @@ var __generator = undefined && undefined.__generator || function(thisArg, body) 
         };
     }
 };
-var API_KEY = undefined;
+var API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzMjkxZGYyMy0zODY1LTQwNjEtYTcxZS1kOGIzZGE1ZGYyNTgiLCJzdWIiOiIxNjI3MWQ0Mi1kMDdjLTRmNTgtOTQ2MC05Nzg4MTY3NjkxNjEiLCJpYXQiOjE3MzMzNzQxMTV9.HjZ5MPjypiPSoyGqxrw22IPYsgssRTGPWW4M_DBzWxw";
 if (!API_KEY) console.warn("\u26A0\uFE0F GameShift: API key not found in environment variables");
 // Generate a unique reference ID
 var referenceID = "user_".concat((0, _uuid.v4)().replace(/-/g, ''));
@@ -4381,83 +4381,35 @@ var fetchWalletBalances = function(walletAddress) {
 },{"uuid":"j4KJi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j4KJi":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "MAX", ()=>(0, _maxJsDefault.default));
-parcelHelpers.export(exports, "NIL", ()=>(0, _nilJsDefault.default));
-parcelHelpers.export(exports, "parse", ()=>(0, _parseJsDefault.default));
-parcelHelpers.export(exports, "stringify", ()=>(0, _stringifyJsDefault.default));
 parcelHelpers.export(exports, "v1", ()=>(0, _v1JsDefault.default));
-parcelHelpers.export(exports, "v1ToV6", ()=>(0, _v1ToV6JsDefault.default));
 parcelHelpers.export(exports, "v3", ()=>(0, _v3JsDefault.default));
 parcelHelpers.export(exports, "v4", ()=>(0, _v4JsDefault.default));
 parcelHelpers.export(exports, "v5", ()=>(0, _v5JsDefault.default));
-parcelHelpers.export(exports, "v6", ()=>(0, _v6JsDefault.default));
-parcelHelpers.export(exports, "v6ToV1", ()=>(0, _v6ToV1JsDefault.default));
-parcelHelpers.export(exports, "v7", ()=>(0, _v7JsDefault.default));
-parcelHelpers.export(exports, "validate", ()=>(0, _validateJsDefault.default));
+parcelHelpers.export(exports, "NIL", ()=>(0, _nilJsDefault.default));
 parcelHelpers.export(exports, "version", ()=>(0, _versionJsDefault.default));
-var _maxJs = require("./max.js");
-var _maxJsDefault = parcelHelpers.interopDefault(_maxJs);
-var _nilJs = require("./nil.js");
-var _nilJsDefault = parcelHelpers.interopDefault(_nilJs);
-var _parseJs = require("./parse.js");
-var _parseJsDefault = parcelHelpers.interopDefault(_parseJs);
-var _stringifyJs = require("./stringify.js");
-var _stringifyJsDefault = parcelHelpers.interopDefault(_stringifyJs);
+parcelHelpers.export(exports, "validate", ()=>(0, _validateJsDefault.default));
+parcelHelpers.export(exports, "stringify", ()=>(0, _stringifyJsDefault.default));
+parcelHelpers.export(exports, "parse", ()=>(0, _parseJsDefault.default));
 var _v1Js = require("./v1.js");
 var _v1JsDefault = parcelHelpers.interopDefault(_v1Js);
-var _v1ToV6Js = require("./v1ToV6.js");
-var _v1ToV6JsDefault = parcelHelpers.interopDefault(_v1ToV6Js);
 var _v3Js = require("./v3.js");
 var _v3JsDefault = parcelHelpers.interopDefault(_v3Js);
 var _v4Js = require("./v4.js");
 var _v4JsDefault = parcelHelpers.interopDefault(_v4Js);
 var _v5Js = require("./v5.js");
 var _v5JsDefault = parcelHelpers.interopDefault(_v5Js);
-var _v6Js = require("./v6.js");
-var _v6JsDefault = parcelHelpers.interopDefault(_v6Js);
-var _v6ToV1Js = require("./v6ToV1.js");
-var _v6ToV1JsDefault = parcelHelpers.interopDefault(_v6ToV1Js);
-var _v7Js = require("./v7.js");
-var _v7JsDefault = parcelHelpers.interopDefault(_v7Js);
-var _validateJs = require("./validate.js");
-var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
+var _nilJs = require("./nil.js");
+var _nilJsDefault = parcelHelpers.interopDefault(_nilJs);
 var _versionJs = require("./version.js");
 var _versionJsDefault = parcelHelpers.interopDefault(_versionJs);
-
-},{"./max.js":false,"./nil.js":false,"./parse.js":false,"./stringify.js":false,"./v1.js":false,"./v1ToV6.js":false,"./v3.js":false,"./v4.js":"8zJtu","./v5.js":false,"./v6.js":false,"./v6ToV1.js":false,"./v7.js":false,"./validate.js":false,"./version.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5Y9F1":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "unsafeStringify", ()=>unsafeStringify);
 var _validateJs = require("./validate.js");
 var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
-const byteToHex = [];
-for(let i = 0; i < 256; ++i)byteToHex.push((i + 0x100).toString(16).slice(1));
-function unsafeStringify(arr, offset = 0) {
-    return (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase();
-}
-function stringify(arr, offset = 0) {
-    const uuid = unsafeStringify(arr, offset);
-    if (!(0, _validateJsDefault.default)(uuid)) throw TypeError('Stringified UUID is invalid');
-    return uuid;
-}
-exports.default = stringify;
+var _stringifyJs = require("./stringify.js");
+var _stringifyJsDefault = parcelHelpers.interopDefault(_stringifyJs);
+var _parseJs = require("./parse.js");
+var _parseJsDefault = parcelHelpers.interopDefault(_parseJs);
 
-},{"./validate.js":"eHPgI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eHPgI":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _regexJs = require("./regex.js");
-var _regexJsDefault = parcelHelpers.interopDefault(_regexJs);
-function validate(uuid) {
-    return typeof uuid === 'string' && (0, _regexJsDefault.default).test(uuid);
-}
-exports.default = validate;
-
-},{"./regex.js":"bUa5g","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bUa5g":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$/i;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8zJtu":[function(require,module,exports,__globalThis) {
+},{"./v1.js":false,"./v3.js":false,"./v4.js":"8zJtu","./v5.js":false,"./nil.js":false,"./version.js":false,"./validate.js":false,"./stringify.js":false,"./parse.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8zJtu":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _nativeJs = require("./native.js");
@@ -4468,9 +4420,9 @@ var _stringifyJs = require("./stringify.js");
 function v4(options, buf, offset) {
     if ((0, _nativeJsDefault.default).randomUUID && !buf && !options) return (0, _nativeJsDefault.default).randomUUID();
     options = options || {};
-    const rnds = options.random || (options.rng || (0, _rngJsDefault.default))();
+    const rnds = options.random || (options.rng || (0, _rngJsDefault.default))(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
     rnds[6] = rnds[6] & 0x0f | 0x40;
-    rnds[8] = rnds[8] & 0x3f | 0x80;
+    rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
     if (buf) {
         offset = offset || 0;
         for(let i = 0; i < 16; ++i)buf[offset + i] = rnds[i];
@@ -4489,18 +4441,65 @@ exports.default = {
 };
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2psyE":[function(require,module,exports,__globalThis) {
+// Unique ID creation requires a high quality random # generator. In the browser we therefore
+// require the crypto API and do not support built-in fallback to lower quality random number
+// generators (like Math.random()).
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>rng);
 let getRandomValues;
 const rnds8 = new Uint8Array(16);
 function rng() {
+    // lazy load so that environments that need to polyfill have a chance to do so
     if (!getRandomValues) {
-        if (typeof crypto === 'undefined' || !crypto.getRandomValues) throw new Error('crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported');
-        getRandomValues = crypto.getRandomValues.bind(crypto);
+        // getRandomValues needs to be invoked in a context where "this" is a Crypto implementation.
+        getRandomValues = typeof crypto !== 'undefined' && crypto.getRandomValues && crypto.getRandomValues.bind(crypto);
+        if (!getRandomValues) throw new Error('crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported');
     }
     return getRandomValues(rnds8);
 }
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5Y9F1":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "unsafeStringify", ()=>unsafeStringify);
+var _validateJs = require("./validate.js");
+var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
+/**
+ * Convert array of 16 byte values to UUID string format of the form:
+ * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+ */ const byteToHex = [];
+for(let i = 0; i < 256; ++i)byteToHex.push((i + 0x100).toString(16).slice(1));
+function unsafeStringify(arr, offset = 0) {
+    // Note: Be careful editing this code!  It's been tuned for performance
+    // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
+    return byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]];
+}
+function stringify(arr, offset = 0) {
+    const uuid = unsafeStringify(arr, offset); // Consistency check for valid UUID.  If this throws, it's likely due to one
+    // of the following:
+    // - One or more input array values don't map to a hex octet (leading to
+    // "undefined" in the uuid)
+    // - Invalid input values for the RFC `version` or `variant` fields
+    if (!(0, _validateJsDefault.default)(uuid)) throw TypeError('Stringified UUID is invalid');
+    return uuid;
+}
+exports.default = stringify;
+
+},{"./validate.js":"eHPgI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eHPgI":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _regexJs = require("./regex.js");
+var _regexJsDefault = parcelHelpers.interopDefault(_regexJs);
+function validate(uuid) {
+    return typeof uuid === 'string' && (0, _regexJsDefault.default).test(uuid);
+}
+exports.default = validate;
+
+},{"./regex.js":"bUa5g","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bUa5g":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gOsBl":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -4575,6 +4574,6 @@ var getLoseToastMessage = function() {
     };
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","8ntPa"], null, "parcelRequire94c2")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","4cJp5"], null, "parcelRequire94c2")
 
 //# sourceMappingURL=MainGamePage.ea929c78.js.map
