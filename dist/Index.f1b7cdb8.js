@@ -164,10 +164,10 @@ window.addEventListener('parcelhmraccept', ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"f11b6b8f6a1f6f0b":"786KC","f490fb404efab291":"1dldy"}],"eFXyh":[function(require,module,exports,__globalThis) {
+},{"f11b6b8f6a1f6f0b":"786KC","f490fb404efab291":"1dldy"}],"2ZkRK":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = 1235;
+var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
@@ -683,6 +683,6 @@ $RefreshReg$(_c, "Index");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-router-dom":"9xmpe","@/hooks/use-toast":"3j0xv","@/components/AuthForm":"2bzt0","@/contexts/UserContext":"bHCI1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","eFXyh"], null, "parcelRequire94c2")
+},{"react":"21dqq","react-router-dom":"9xmpe","@/hooks/use-toast":"3j0xv","@/components/AuthForm":"2bzt0","@/contexts/UserContext":"bHCI1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","2ZkRK"], null, "parcelRequire94c2")
 
 //# sourceMappingURL=Index.f1b7cdb8.js.map

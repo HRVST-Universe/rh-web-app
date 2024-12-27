@@ -164,10 +164,10 @@ window.addEventListener('parcelhmraccept', ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"f11b6b8f6a1f6f0b":"786KC","f490fb404efab291":"1dldy"}],"4cJp5":[function(require,module,exports,__globalThis) {
+},{"f11b6b8f6a1f6f0b":"786KC","f490fb404efab291":"1dldy"}],"8ntPa":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = 1235;
+var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
@@ -4273,7 +4273,7 @@ var __generator = undefined && undefined.__generator || function(thisArg, body) 
         };
     }
 };
-var API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIzMjkxZGYyMy0zODY1LTQwNjEtYTcxZS1kOGIzZGE1ZGYyNTgiLCJzdWIiOiIxNjI3MWQ0Mi1kMDdjLTRmNTgtOTQ2MC05Nzg4MTY3NjkxNjEiLCJpYXQiOjE3MzMzNzQxMTV9.HjZ5MPjypiPSoyGqxrw22IPYsgssRTGPWW4M_DBzWxw";
+var API_KEY = undefined;
 if (!API_KEY) console.warn("\u26A0\uFE0F GameShift: API key not found in environment variables");
 // Generate a unique reference ID
 var referenceID = "user_".concat((0, _uuid.v4)().replace(/-/g, ''));
@@ -4574,6 +4574,6 @@ var getLoseToastMessage = function() {
     };
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","4cJp5"], null, "parcelRequire94c2")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","8ntPa"], null, "parcelRequire94c2")
 
 //# sourceMappingURL=MainGamePage.ea929c78.js.map
